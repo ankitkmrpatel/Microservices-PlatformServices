@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlatformService", "src\PlatformService\PlatformService.csproj", "{6AC8D8F3-8661-432D-BB49-2CEE70655DAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "K8S", "K8S", "{48532557-EB99-40AB-AECB-0DB3F32A0035}"
+	ProjectSection(SolutionItems) = preProject
+		data\K8S\commands-deploy.yaml = data\K8S\commands-deploy.yaml
+		data\K8S\ingress-nginx-deploy.yaml = data\K8S\ingress-nginx-deploy.yaml
+		data\K8S\ingress-nginx-service.yaml = data\K8S\ingress-nginx-service.yaml
+		data\K8S\platforms-deploy.yaml = data\K8S\platforms-deploy.yaml
+		data\K8S\platforms-np-service.yaml = data\K8S\platforms-np-service.yaml
+		data\K8S\rabbitmq-deploy.yaml = data\K8S\rabbitmq-deploy.yaml
+		data\K8S\service-local-pvc.yaml = data\K8S\service-local-pvc.yaml
+		data\K8S\service-mssql-database-depl.yaml = data\K8S\service-mssql-database-depl.yaml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandService", "src\CommandService\CommandService.csproj", "{DDAF86A9-9049-4130-8A14-F5B87501921C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AC8D8F3-8661-432D-BB49-2CEE70655DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC8D8F3-8661-432D-BB49-2CEE70655DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC8D8F3-8661-432D-BB49-2CEE70655DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC8D8F3-8661-432D-BB49-2CEE70655DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDAF86A9-9049-4130-8A14-F5B87501921C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDAF86A9-9049-4130-8A14-F5B87501921C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDAF86A9-9049-4130-8A14-F5B87501921C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDAF86A9-9049-4130-8A14-F5B87501921C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A46FA54F-0A2A-4FA4-BA26-206DFDAC0E00}
+	EndGlobalSection
+EndGlobal
